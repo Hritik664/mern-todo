@@ -23,8 +23,14 @@ app.use('/api/auth', authRoutes);
 app.use('/api/todos', todoRoutes);
 
 // Serve static files in production
-const __dirname = path.resolve(); // Resolve __dirname for ES module compatibility
+const __dirname = path.resolve(); // Ensure __dirname is defined
 app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Fallback for React Router (Single Page Application)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

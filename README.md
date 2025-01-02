@@ -3,7 +3,7 @@
 A simple and efficient Todo application built with the MERN stack. It features user authentication with signup and login functionality to manage personalized task lists seamlessly.
 
 ---
-#sample view on 👇
+#sample view on ➡
 https://mern-todo-2fgd.onrender.com
 
 ## Features 🚀

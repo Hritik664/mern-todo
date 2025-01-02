@@ -10,7 +10,11 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://mern-todo-2fgd.onrender.com'], // Allow requests from these origins
+  credentials: true,
+}));
+
 app.use(express.json());
 
 // Connect to MongoDB

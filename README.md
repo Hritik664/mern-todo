@@ -23,17 +23,17 @@ A simple and efficient Todo application built with the MERN stack. It features u
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/hritik664/mern-todo.git
    ```
 2. Install dependencies for both client and server:  
    ```bash
-   cd client && npm install  
-   cd ../server && npm install
+   npm install
+   npm run dev
    ```
 3. Start the development servers:  
    ```bash
-   cd client && npm start  
-   cd ../server && nodemon index.js
+   cd client
+   npm start
    ```
 
 ---
